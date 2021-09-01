@@ -5,7 +5,7 @@ const https=require("https");
 const { json } = require("body-parser");
 const { response } = require("express");
 const app=express();
-app.use(express.static("Public"));
+app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended:true}));
 app.get("/",function(req,res){
     res.sendFile(__dirname+"/signup.html");
