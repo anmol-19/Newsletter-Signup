@@ -16,7 +16,7 @@ app.post("/failure.html",function(req,res){
 app.post("/",function(req,res){
     const firstName=req.body.first;
     const lastName=req.body.last;
-    const Email=req.body.mail;
+    const email=req.body.mail;
     console.log(firstName,lastName,Email);
     const data={
         members:[
